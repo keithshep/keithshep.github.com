@@ -1,0 +1,22 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>keithsheppard.name - notes</title>
+    <link>http://keithsheppard.name</link>
+
+{% for post in site.posts %}
+    <item>
+        <title>{{ post.title }}</title>
+        <link>http://keithsheppard.name{{ post.url }}</link>
+        <guid>{{ post.id }}</guid>
+        <pubDate>{{ post.date }}</pubDate>
+    </item>
+{% endfor %}
+ 
+</channel>
+</rss>
+

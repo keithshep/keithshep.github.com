@@ -1,43 +1,27 @@
-<html>
-    <head>
-        <title>keithsheppard.name</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    </head>
-    <body>
-        <h1>keithsheppard.name</h1>
-        <div>
-            I created this site to share my thoughts and software with you.
-            You can send any questions or comments to
-            <a href="mailto:keithshep@gmail.com">keithshep@gmail.com</a>
-        </div>
+---
+layout: default
+title: keithsheppard.name
+---
 
-        <h2>Links</h2>
-        <div>
-            <ul>
-            <li>I <a href="http://blog.keithsheppard.name">blog</a> about functional programming and other stuff</li>
-            <li><a href="txt-sushi/index.html">txt-sushi</a>: A collection
-            of command line utilities written in haskell for processing
-            flat files (spreadsheets).</li>
-            <li>If you're interested in source code all of
-            <a href="https://github.com/keithshep">my repositories</a> are
-            on github</li>
-            </ul>
-        </div>
+<h1>{{ page.title }}</h1>
+<div>
+    This site is about coding and some other things that interest me. I'm
+    <a href="http://twitter.com/#!/keithsheppard">@keithsheppard</a> on twitter
+    and you can find <a href="https://github.com/keithshep">my projects</a> on
+    github.
+</div>
 
-        <br/>
-        <div>Thanks to <a href="https://github.com">github</a> for hosting this site and my code repositories.</div>
-        
-        <!-- JavaScript for Goolge Analytics -->
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-            try {
-                var pageTracker = _gat._getTracker("UA-8667692-1");
-                pageTracker._trackPageview();
-            } catch(err) {}
-        </script>
-    </body>
-</html>
+<h2>Notes (<a href="rss.xml">feed</a>)</h2>
+
+<div>There are also a bunch of old posts I left behind at <a href="http://blog.keithsheppard.name">my old blogger blog</a>.</div>
+
+{% for post in site.posts %}
+<div>* {{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></div>
+{% endfor %}
+
+<br/>
+<div>
+    Thanks to <a href="https://github.com">github</a> for hosting this site and
+    my code repositories.
+</div>
+

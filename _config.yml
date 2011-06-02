@@ -1,0 +1,7 @@
+permalink: /notes/:year-:month-:day-:title.html
+auto: true
+server: true
+pygments: true
+lsi: true
+markdown: rdiscount
+
