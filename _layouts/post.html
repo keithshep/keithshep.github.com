@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<div class="strap">{{ page.date | date: "%b %d, %Y" }}</div>
+<div class="strap">{{ page.date | date: "%b %d, %Y" }} [<a href="https://github.com/keithshep/keithshep.github.com/commits/master/_posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.id | remove_first: "/notes/"}}.markdown">change history</a>]</div>
 <div id="post">
 {{ content }}
 </div>
