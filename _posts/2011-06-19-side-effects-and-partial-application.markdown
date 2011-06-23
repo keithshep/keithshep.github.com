@@ -9,6 +9,7 @@ Here's a lesson I learned while writing
 buggy_iprintfn function?
 
 {% highlight ocaml %}
+(* an indented version of the printf function *)
 let buggy_iprintfn depth fmt =
     for i = 0 to depth - 1 do
         printf "\t"
@@ -53,6 +54,7 @@ below fixes the bug by moving all side effects into printIndented which will not
 execute until all arguments are applied to the returned function value.
 
 {% highlight ocaml %}
+(* an indented version of the printf function *)
 let iprintfn depth fmt =
     let printIndented s =
         for i = 0 to depth - 1 do
