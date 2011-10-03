@@ -16,7 +16,7 @@ The main idea is to build a .NET compiler which is designed to perform well for 
 
 ## Why I'm building it
 
-I started this project very reluctantly. I work as a scientific programmer and in my ever-humble opinion F# is the best language to use for a good chunk of the problems I work on, but I have not had good luck using mono on computationally intensive problems. This is not at all a knock against mono. I think mono is great for what 90% of .NET users want: reasonably fast performance for typical desktop and web applications, but I need more than that. I was also working on a machine learning project on the side (which is on pause now) which has a somewhat unique requirement of being able to sandbox threads so that they could "crash" in any way without affecting the rest of the process.
+I started this project very reluctantly. I work as a scientific programmer and in my opinion F# is the best language to use for many of the problems I work on, but I have not had good luck using mono on computationally intensive problems. This is not at all a knock against mono. I think mono is great for what 90% of .NET users want: reasonably fast performance for typical desktop and web applications, but I need more than that. I was also working on a machine learning project on the side (which is on pause now) which has a somewhat unique requirement of being able to sandbox threads so that they could "crash" in any way without affecting the rest of the process.
 
 Also, generating more efficient code means that your computers will use less electricity which means that less CO2 will be released into the atmosphere, thereby slowing the rise in global temperatures and preserving the dwindling habitat of the majestic polar bear. Who doesn't want to save polar bears?
 
