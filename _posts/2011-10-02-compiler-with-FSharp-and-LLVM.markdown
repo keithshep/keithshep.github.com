@@ -8,7 +8,7 @@ I've been using most of my spare time lately building fig: a .NET compiler using
 
 ## What I'm building
 
-The main idea is to build a .NET compiler which is designed to perform well for the kind of computationally intensive problems seen in fields like machine learning, computational finance, computational biology and other computational sciences. With this goal in mind the compiler implementation should:
+The main idea is to build a compiler which generates a stand-alone native executable from a .NET assembly. This compiler will be designed to perform well for the kind of computationally intensive problems seen in fields like machine learning, computational finance, computational biology and other computational sciences. With this goal in mind the compiler implementation should:
 
 * optimize aggressively: given that we can expect long runtimes with large memory requirements we are much more willing to trade compile time for efficient machine code. Fortunately LLVM already solves the problem of low level optimizations which should allow me to focus on higher level optimizations specific to the .NET runtime and code structure. Longer compile times also means that being able to do ahead of time (AOT) compilation is a requirement and just in time (JIT) compilation will be treated as a nice-to-have.
 
