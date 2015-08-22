@@ -10,6 +10,7 @@ __Warning__: These notes are a work in progress and probably contain some errors
 ## Resources
 
 Books:
+
 * *Bayesian Core: A practical approach to computational bayesian statistics* by martin and Robert
 * *Computer Vision: models learning and inference* free PDF, answers and slides at http://www.computervisionmodels.com/
 

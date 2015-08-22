@@ -10,6 +10,7 @@ __Warning__: These notes are a work in progress and probably contain some errors
 ## Resources
 
 Books:
+
 * *Practical Algorithms for Image Analysis, Second Edition* by O'Gorman, Sammon and Seul
 * *Image Processing, The Fundamentals, Second Edition* by Petrou
 * *Computer Vision: Algorithms and Applications* free PDF at http://szeliski.org/Book/
